@@ -1,0 +1,262 @@
+.tableBox {
+    /* background-color: rgb(196, 189, 189); */
+    width: 1100px;
+    margin: 0 auto;
+    /* height: 657px; */
+    margin-bottom: 160px;
+}
+
+.login-regin {
+    width: 324px;
+    height: 50px;
+    padding: 40px 388px 0px;
+    /* background-color: red; */
+    margin: 0 auto;
+    /* box-sizing: border-box; */
+}
+
+.login-regin li {
+    float: left;
+    /* background-color: orange; */
+    font-size: 20px;
+    /* line-height: 100px; */
+}
+
+.cen {
+    height: 22px;
+    border-left: 1px solid black;
+    margin: 0px 110px;
+}
+
+.table {
+    width: 1000px;
+    height: 555px;
+    border: 1px solid #e5e5e5;
+    margin: 0 49px;
+    /* margin: 0 auto; */
+}
+
+.loginParent {
+    width: 1000px;
+    height: 555px;
+    /* background-color: yellow; */
+}
+
+
+/* 切换 */
+
+.active {
+    font-weight: bold;
+    display: block;
+}
+
+.loginSwitch .active {
+    border-bottom: 1px solid black;
+}
+
+.account_pwd {
+    display: none;
+}
+
+
+/* 左 */
+
+.loginLef {
+    width: 378px;
+    height: 505px;
+    padding: 50px 60px 0px;
+    /* background-color: violet; */
+    float: left;
+}
+
+.loginSwitch {
+    width: 378px;
+    height: 30px;
+    /* background-color: pink; */
+}
+
+.loginSwitch li {
+    float: left;
+    line-height: 29px;
+    margin-right: 34px;
+    height: 29px;
+}
+
+
+/* 内容区 */
+
+.code_tel {
+    width: 376px;
+    height: 42px;
+    border: 1px solid black;
+    margin-top: 25px;
+}
+
+.code_pic {
+    width: 198px;
+    height: 42px;
+    border: 1px solid black;
+    margin-top: 15px;
+    float: left;
+}
+
+.picCodeImg {
+    float: left;
+    width: 93px;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+    font-size: 24px;
+    margin-left: 14px;
+    border: 1px solid black;
+    margin-top: 15px;
+    /* background-color: red; */
+}
+
+.changePicCode {
+    float: right;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    width: 60px;
+    height: 44px;
+    border-bottom: 1px solid black;
+    margin-top: 15px;
+}
+
+.account_pwd dd:nth-child(3) {
+    width: 376px;
+    height: 69px;
+}
+
+.code_dxin {
+    width: 198px;
+    height: 42px;
+    border: 1px solid black;
+    margin-top: 25px;
+    float: left;
+}
+
+.sendCode {
+    width: 162px;
+    height: 44px;
+    float: left;
+    margin-left: 14px;
+    margin-top: 25px;
+    font-size: 18px;
+    background: #0f0b00;
+    color: #ffffff;
+}
+
+.login_btn {
+    width: 378px;
+    height: 44px;
+    margin-top: 50px;
+    font-size: 18px;
+    background: #0f0b00;
+    color: #ffffff;
+}
+
+.code_pwd {
+    width: 376px;
+    height: 42px;
+    border: 1px solid black;
+    margin-top: 25px;
+}
+
+.forget {
+    /* background: #f0cf7d; */
+    width: 376px;
+    height: 40px;
+    display: block;
+    margin-top: 10px;
+}
+
+.otherWay {
+    width: 378px;
+    height: 22px;
+    margin-top: 20px;
+    /* background-color: yellow; */
+}
+
+.otherWay span {
+    font-size: 18px;
+    float: left;
+}
+
+.wechat {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-left: 20px;
+    background: url(../images/wechart.png) no-repeat center;
+    background-size: 19px;
+}
+
+.weibo {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-left: 20px;
+    background: url(../images/weibo.png) no-repeat center;
+    background-size: 19px;
+    background-color: black;
+    border-radius: 4px;
+}
+
+.errorMsg {
+    /* display: none; */
+    width: 378px;
+    min-height: 44px;
+    background: #0f0b00;
+    border: 0;
+    font-size: 14px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 18px;
+    padding: 13px 0;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+
+
+/* 中 */
+
+.loginCen {
+    width: 0px;
+    height: 200px;
+    margin-top: 50px;
+    border-left: 1px solid #e5e5e5;
+    /* background-color: violet; */
+    float: left;
+}
+
+
+/* 右 */
+
+.loginRig {
+    width: 378px;
+    height: 505px;
+    padding: 50px 60px 0px;
+    /* background-color: rgb(41, 214, 70); */
+    float: left;
+}
+
+.loginRig span {
+    font-size: 18px;
+}
+
+.loginRig p {
+    line-height: 30px;
+    margin-top: 34px;
+}
+
+.loginRig a {
+    display: block;
+    width: 292px;
+    height: 43px;
+    border: 1px solid black;
+    margin-top: 40px;
+    line-height: 43px;
+    text-align: center;
+}

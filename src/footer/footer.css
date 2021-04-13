@@ -1,0 +1,164 @@
+/* footer {
+    width: 100%;
+    height: 580px;
+    background-color: #0f0b00;
+    color: #fff;
+    text-align: center;
+    min-width: 1200px;
+} */
+
+.service {
+    width: 100%;
+    height: 580px;
+    background-color: #0f0b00;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.service-h3 {
+    width: 1220px;
+    height: 82px;
+    line-height: 82px;
+    margin: 0 auto;
+    /* background-color: orange; */
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    font-weight: normal;
+}
+
+.service-u1 {
+    width: 1220px;
+    height: 171px;
+    /* background-color: green; */
+    border-bottom: #808080 1px solid;
+    margin: 0 auto;
+}
+
+.service-l1 {
+    width: 100px;
+    height: 123px;
+    /* background-color: blue; */
+    float: left;
+    margin-left: 162px;
+    margin-top: 20px;
+}
+
+.service-img1 {
+    display: block;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    /* background-color: aqua; */
+    margin-top: 8px;
+    margin-left: 10px;
+}
+
+.service-span1 {
+    display: block;
+    width: 80px;
+    height: 20px;
+    /* background-color: pink; */
+    margin-left: 10px;
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+}
+
+.service-u2 {
+    width: 1220px;
+    height: 168px;
+    /* background-color: pink; */
+    margin: auto;
+    margin-top: 60px;
+}
+
+.service-l2 {
+    width: 100px;
+    height: 168px;
+    /* background-color: red; */
+    float: left;
+    margin-left: 160px;
+}
+
+.service-d1 {
+    width: 100px;
+    height: 148px;
+    /* background-color: green; */
+}
+
+.service-dt1 {
+    /* display: block; */
+    width: 100px;
+    height: 18px;
+    line-height: 18px;
+    /* background-color: gray; */
+    margin-top: 9px;
+    text-align: center;
+    font-weight: 800px;
+    font-size: 20px;
+    color: white;
+}
+
+.service-dd1 {
+    width: 100px;
+    height: 15px;
+    line-height: 15px;
+    /* background-color: yellow; */
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+}
+
+.service-img2 {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+
+.bootom {
+    width: 1220px;
+    height: 130px;
+    /* background-color: yellow; */
+    margin: auto;
+}
+
+.bootom-p1 {
+    width: 1220px;
+    height: 15px;
+    line-height: 15px;
+    margin-top: 40px;
+    /* background-color: red; */
+    text-align: center;
+    color: black;
+    font-size: 15px;
+}
+
+.bottom-span1 {
+    display: block;
+    width: 300px;
+    height: 15px;
+    line-height: 15px;
+    margin-top: 10px;
+    margin-left: 330px;
+    /* background-color: green; */
+}
+
+.bottom-span2 {
+    display: block;
+    width: 258px;
+    height: 15px;
+    line-height: 15px;
+    margin-top: -15px;
+    margin-left: 620px;
+    /* background-color: red; */
+    /* text-align: center; */
+}
+
+.bottom-img1 {
+    display: block;
+    width: 15px;
+    height: 15px;
+    margin-top: -15px;
+}

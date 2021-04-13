@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录</title>
+    <link rel="stylesheet" type="text/css" href="图标图标/iconfont.css" />
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/hover.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header id="head">
+    </header>
+    <!-- 导航栏 -->
+    <nav class="nav">
+    </nav>
+
+    <!-- 登陆注册内容区 -->
+    <div class="tableBox">
+        <!-- login/regin -->
+        <ul class="login-regin">
+            <li class="active"><a href="login.html">登录</a></li>
+            <li class="cen"></li>
+            <li><a href="regin.html">注册</a></li>
+        </ul>
+        <!-- centercontent带边框 -->
+        <div class="login table">
+            <!-- 不带边框的内容 -->
+            <dl class="loginParent">
+                <!-- 左 -->
+                <div class="loginLef">
+                    <!-- 1切换：验证码/账号密码 -->
+                    <ul class="loginSwitch">
+                        <li class="login1 active">验证码登录</li>
+                        <li class="login2">账号密码登录</li>
+                    </ul>
+                    <!-- 2:验证码/账号密码内容区 -->
+                    <div class="loginContent">
+                        <!-- 短信登录 -->
+                        <dl class="duanxin">
+                            <!-- 电话号码 -->
+                            <dd><input class="code_tel" type="tel" placeholder="手机号码" maxlength="11" autocomplete="off" onkeyup="value=value.replace(/[^\d]/g,'')"></dd>
+                            <!-- 验证码 -->
+                            <dd>
+                                <input class="code_pic" type="text" placeholder="请输入验证码" maxlength="4" autocomplete="off">
+                                <div class="picCodeImg"></div>
+                                <!-- <img alt="" class="picCodeImg" src="https://api.chcedo.com/api/v1/common/generate/img/verification/code?generateScenes=mobile_sms_login"> -->
+                                <div class="changePicCode"> 看不清?换一张 </div>
+                            </dd>
+                            <!-- 短信验证码 -->
+                            <dd><input class="code_dxin" type="text" placeholder="短信验证码" maxlength="4" autocomplete="off">
+                                <button class="sendCode">发送验证码</button>
+                            </dd>
+                            <button class="login_btn">登录</button>
+                        </dl>
+                        <!-- 账号密码登录 -->
+                        <dl class="account_pwd">
+                            <!-- 电话号码 -->
+                            <dd><input class="code_tel" type="tel" placeholder="手机号码" maxlength="11" autocomplete="off" onkeyup="value=value.replace(/[^\d]/g,'')"></dd>
+                            <!-- 密码 -->
+                            <dd><input class="code_pwd" type="password" placeholder="请输入密码" autocomplete="off"></dd>
+                            <!-- 短信验证码 -->
+                            <dd>
+                                <input class="code_dxin" type="text" placeholder="短信验证码" maxlength="4" autocomplete="new-password">
+                                <button class="sendCode">发送验证码</button>
+                            </dd>
+                            <!-- 忘记密码 -->
+                            <dd>
+                                <a class="forget" href="index.html">忘记密码？</a>
+                            </dd>
+                            <button class="login_btn1" style="margin-top: 20px;">登录</button>
+                        </dl>
+                    </div>
+                    <!-- 其他方式登录 -->
+                    <p class="otherWay">
+                        <span>使用第三方账号登录</span>
+                        <a class="other wechat" href="https://open.weixin.qq.com/connect/qrconnect?appid=wx8d82b0e813dab01c&amp;response_type=code&amp;scope=snsapi_login&amp;state=weixin&amp;redirect_uri=https%3A//www.chcedo.com/third/party/auth/login.html?client=pc"></a>
+                        <a class="other weibo" href="https://api.weibo.com/oauth2/authorize?client_id=1703168776&amp;response_type=code&amp;state=xinlangweibo&amp;redirect_uri=https%3A//www.chcedo.com/auth.html"></a>
+                    </p>
+                    <p class="errorMsg">错误信息</p>
+                </div>
+                <!-- 中 -->
+                <div class="loginCen"></div>
+                <!-- 右 -->
+                <div class="loginRig">
+                    <span>注册自然堂账户</span>
+                    <p>注册自然堂账号以便追踪您的订单，管理收获地址，获取更多个性化信息</p>
+                    <a href="regin.html">创建账户</a>
+                </div>
+            </dl>
+        </div>
+    </div>
+
+    <!-- 尾部 -->
+    <footer id="foot">
+    </footer>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="nav/nav.js"></script>
+
+    <script>
+        $(".nav").load("nav/nav.html");
+        $("#head").load("header/header.html");
+        $("#foot").load("footer/footer.html");
+
+
+        //========================登录切换=================================
+        get(".loginSwitch").onclick = function(event) {
+            let _this = event.target;
+            console.log(_this);
+            if (_this.className === "login2") {
+
+                get(".duanxin").style.display = "none";
+                get(".account_pwd").style.display = "block";
+                get(".login2").className = "login2 active";
+                get(".login1").className = "login1";
+
+            }
+            if (_this.className === "login1") {
+                get(".duanxin").style.display = "block";
+                get(".account_pwd").style.display = "none";
+
+                get(".login2").className = "login2";
+                get(".login1").className = "login1 active";
+
+            }
+        };
+        //====================正则============================
+        let isTrue = [];
+        let isTrue1 = [];
+        //手机号：15  13  18，17 开头的11数字
+        $(".code_tel").blur(function() {
+            var telReg = /^1[3|5|7|8][\d]{9}$/;
+            if (!telReg.test(this.value)) {
+                alert("不符合规则！");
+                isTrue[0] = 0;
+                // isTrue1[0] = 0;
+            } else {
+                isTrue[0] = 1;
+                // isTrue1[0] = 1;
+
+            }
+        });
+
+
+        //验证码
+        // 验证码
+        function code() {
+            //存放数据
+            var codes = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "a", "b", "c", "d", "e", "f", "g",
+                "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z",
+                "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"
+            ];
+            var result = [];
+            for (var i = 0; i < 4; i++) {
+                result.push(codes[parseInt(Math.random() * codes.length)])
+
+            }
+            $(".picCodeImg").html(result.join("")); //将数组转换为字符串-----join("分隔符")----不写默认为逗号,
+            return (result.join("")); //字符串：1en5
+            // console.log(result);//result；数组：1，e，n，5
+        }
+        $(".picCodeImg").html(code());
+
+        //点击换一个
+        $(".changePicCode").click(function() {
+            console.log(1);
+            $(".picCodeImg").html("");
+            $(".picCodeImg").html(code());
+        });
+
+        //当输入完毕之后就判断：失焦
+        //判断是否相等
+        $(".code_pic").blur(function() {
+            //验证码:输入的验证码必须和红色框中的相同
+            //点击看不清可以实现验证码的切换验证码由字母、数字组成
+            var yCodeReg = /^[0-9a-zA-Z]{4}$/;
+            //
+            if (yCodeReg.test(this.value)) {
+                if (this.value !== $(".picCodeImg").html()) {
+                    alert("验证码错误！请重新输入");
+                    isTrue[1] = 0;
+                    // isTrue1[1] = 0;
+                } else {
+                    isTrue[1] = 1;
+                    // isTrue1[1] = 1;
+                }
+            }
+        });
+        //短信验证码
+        //密码验证
+        $(".code_pwd").blur(function() {
+            //密码：6-18位字符组成
+            pwdReg = /^[\w]{6,18}$/;
+            if (!pwdReg.test(this.value)) {
+                alert("密码仅支持6-18位字符:数字、字母、下划线");
+                // isTrue1[2] = 0;
+            } else {
+                // isTrue1[2] = 1;
+            }
+        });
+        console.log(isTrue)
+            //注册登录验证
+        $(".login_btn").click(function() {
+            // every函数：判断数据中的每个元素是否满足条件（回调函数写的条件）
+            if (!isTrue.every(item => item == 1)) {
+                alert("请仔细检查每一项是否正确");
+            } else {
+                // 2、发送请求（注册）
+                $.post(
+                    "php/login.php", {
+                        // "username": $(".username").val(),
+                        "usertel": $(".code_tel").val(),
+                        // "userpwd": $(".code_pwd").val(),
+                    },
+                    function(data) {
+                        if (data == 1) {
+                            // alert("登录成功！");
+
+                            location.href = "http://localhost/CHANDO/index.html";
+                        } else {
+                            alert("登录失败！用户名不存在！");
+                        }
+                    }
+                );
+            }
+        });
+        //注册登录验证
+        // $(".login_btn1").click(function() {
+        //     // every函数：判断数据中的每个元素是否满足条件（回调函数写的条件）
+        //     if (!isTrue1.every(item => item == 1)) {
+        //         alert("请仔细检查每一项是否正确");
+        //     } else {
+        //         // 2、发送请求（注册）
+        //         $.post(
+        //             "php/login.php", {
+        //                 // "username": $(".username").val(),
+        //                 "usertel": $(".code_tel").val(),
+        //                 "userpwd": $(".code_pwd").val(),
+        //             },
+        //             function(data) {
+        //                 if (data == 1) {
+        //                     alert("登录成功！");
+
+        //                     // location.href = "http://CHANDO/login.html";
+        //                 } else {
+        //                     alert("登录失败！");
+        //                 }
+        //             }
+        //         );
+        //     }
+        // });
+    </script>
+</body>
+
+</html>

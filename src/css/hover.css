@@ -1,0 +1,8 @@
+.back,
+button {
+    cursor: pointer;
+}
+
+.loginSwitch li {
+    cursor: pointer;
+}

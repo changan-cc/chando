@@ -1,0 +1,141 @@
+.tableBox {
+    /* background-color: rgb(196, 189, 189); */
+    width: 1100px;
+    margin: 0 auto;
+    /* height: 657px; */
+    margin-bottom: 160px;
+}
+
+.login-regin {
+    width: 324px;
+    height: 50px;
+    padding: 40px 388px 0px;
+    /* background-color: red; */
+    margin: 0 auto;
+    /* box-sizing: border-box; */
+}
+
+.login-regin li {
+    float: left;
+    /* background-color: orange; */
+    font-size: 20px;
+    /* line-height: 100px; */
+}
+
+.cen {
+    height: 22px;
+    border-left: 1px solid black;
+    margin: 0px 110px;
+}
+
+.active {
+    font-weight: bold;
+}
+
+.table {
+    width: 1000px;
+    height: 555px;
+    border: 1px solid #e5e5e5;
+    margin: 0 49px;
+    /* margin: 0 auto; */
+}
+
+.reginParent {
+    width: 1000px;
+    height: 555px;
+    /* background-color: yellow; */
+}
+
+.reginContent {
+    width: 920px;
+    height: 450px;
+    padding: 105px 40px 0px;
+    /* background-color: orange; */
+}
+
+dd {
+    width: 458px;
+    height: 46px;
+    margin-bottom: 24px;
+    float: left;
+}
+
+dd span {
+    float: left;
+    width: 100px;
+    height: 46px;
+    font-size: 17px;
+    line-height: 46px;
+}
+
+input {
+    width: 300px;
+    height: 44px;
+    float: left;
+    border: 1px solid #ccc;
+    text-indent: 12px;
+}
+
+.code_pic,
+.code_dxin {
+    width: 170px;
+    height: 44px;
+    border: 1px solid black;
+    float: left;
+}
+
+.picCodeImg {
+    display: block;
+    float: left;
+    width: 90px;
+    height: 44px;
+    line-height: 46px;
+    font-size: 24px;
+    text-align: center;
+    margin-left: 5px;
+    border: 1px solid #ccc;
+    /* background-color: red; */
+}
+
+.changePicCode {
+    float: left;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    width: 52px;
+    height: 44px;
+    border-bottom: 1px solid black;
+}
+
+.sendCode {
+    width: 130px;
+    height: 46px;
+    float: left;
+    margin-left: 5px;
+    font-size: 18px;
+    background: #0f0b00;
+    color: #ffffff;
+}
+
+.regin_btn {
+    width: 390px;
+    height: 44px;
+    margin: 50px 0px 0px 225px;
+    font-size: 18px;
+    background: #0f0b00;
+    color: #ffffff;
+}
+
+#check {
+    width: 15px;
+    height: 15px;
+    float: left;
+    margin-right: 10px;
+    margin-top: 5px;
+    background-color: orange;
+}
+
+.guize {
+    font-size: 14px;
+    text-align: left;
+}

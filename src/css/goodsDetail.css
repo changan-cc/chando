@@ -1,0 +1,367 @@
+maxBox {
+    width: 100%;
+    background-color: rgb(167, 159, 159);
+}
+
+.contentBox {
+    width: 1100px;
+    /* height: 2000px; */
+    margin: 0 auto;
+    /* background-color: orange; */
+}
+
+.detailHead {
+    width: 1100px;
+    height: 470px;
+    /* background-color: yellow; */
+    margin-top: 40px;
+    padding: 50px 0px 40px 0px;
+    /* position: relative; */
+}
+
+.detailHead .img {
+    width: 620px;
+    height: 460px;
+    background-color: #f9f9f9;
+    /* background-color: pink; */
+    float: left;
+    position: relative;
+}
+
+.jiaobiao {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 40px;
+    top: 20px;
+}
+
+.img>img {
+    width: 460px;
+    height: 460px;
+    display: block;
+    margin: 0px 80px;
+}
+
+.imgsParent {
+    position: relative;
+    /* width: 620px; */
+    height: 460px;
+    background-color: #f9f9f9;
+    /* background-color: pink; */
+    float: left;
+    overflow: hidden;
+    /* position: relative; */
+    cursor: move;
+}
+
+.bigImg {
+    width: 230px;
+    height: 230px;
+    background-color: rgba(0, 0, 0, .2);
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    pointer-events: none;
+    /* 防止抖动，给元素本身加 */
+    /* z-index: 2000; */
+    /* cursor: move; */
+}
+
+.bigImg img {
+    width: 920px;
+    height: 920px;
+    position: absolute;
+    /* top: 0; */
+    /* left: 0; */
+    /* background-color: powderblue; */
+}
+
+.detailHead .detailTitle {
+    width: 420px;
+    height: 470px;
+    float: right;
+    /* background-color: plum; */
+    position: relative;
+}
+
+.detailTop {
+    /* background-color: red; */
+}
+
+.detailBottom {
+    /* background-color: green; */
+    position: absolute;
+    bottom: 0px;
+}
+
+.detailBottom .mini_img {
+    width: 420px;
+    height: 72px;
+    padding: 5px 0px 0px 4px;
+}
+
+.detailBottom .mini_img li {
+    width: 56px;
+    height: 28px;
+    border: 1px solid #b3b3b3;
+    overflow: hidden;
+    margin: 0px 10px 8px 0px;
+    box-sizing: border-box;
+    float: left;
+}
+
+.detailBottom .mini_img li img {
+    display: block;
+    width: 56px;
+    height: 28px;
+}
+
+.btn {
+    width: 420px;
+    height: 44px;
+    margin: 15px 0px 10px 0px;
+    /* background-color: aqua; */
+}
+
+.step {
+    width: 110px;
+    height: 42px;
+    border: 1px solid black;
+    float: left;
+    background-color: #fff;
+    font-size: 18px;
+    text-align: center;
+}
+
+.step .sub,
+.add {
+    width: 30px;
+    height: 42px;
+    float: left;
+    background-color: #fff;
+    outline: none;
+    border: none;
+    font-size: 28px;
+}
+
+.count {
+    float: left;
+    width: 48px;
+    height: 42px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.addCart,
+.buy {
+    width: 110px;
+    height: 44px;
+    border: 1px solid black;
+    float: left;
+    margin-left: 10px;
+    background-color: #fff;
+}
+
+.buy {
+    background-color: black;
+    color: #fff;
+}
+
+.icon {
+    width: 420px;
+    height: 34px;
+    /* background-color: cornflowerblue; */
+}
+
+.icon .shoucang {
+    display: block;
+    width: 30px;
+    height: 50px;
+    float: left;
+    margin-right: 20px;
+    background: url(../images/heart.png) no-repeat center;
+}
+
+.icon .share {
+    display: block;
+    width: 30px;
+    height: 50px;
+    float: left;
+    margin-right: 20px;
+    background: url(../images/share.png) no-repeat center;
+}
+
+.icon .kefu {
+    display: block;
+    width: 30px;
+    height: 50px;
+    float: left;
+    /* margin-right: 20px; */
+    background: url(../images/chart.png) no-repeat center;
+}
+
+.detailImgs {
+    margin: 60px auto 100px;
+    width: 1100px;
+}
+
+.haowuzc {
+    width: 1100px;
+    height: 520px;
+    /* background-color: crimson; */
+}
+
+.haowuzc h3 {
+    width: 1100px;
+    height: 100px;
+    line-height: 100px;
+    font-size: 20px;
+    /* background-color: cyan; */
+}
+
+.haowuzc h3 span {
+    float: left;
+    font-weight: 700;
+}
+
+.haowuzc h3 a {
+    float: right;
+}
+
+
+/* darenul */
+
+.daren {
+    width: 1100px;
+    height: 420px;
+}
+
+.daren li {
+    width: 360px;
+    height: 210px;
+    /* margin-right: 10px; */
+    float: left;
+}
+
+.daren li:nth-child(2),
+li:nth-child(5) {
+    margin: 0px 10px;
+}
+
+.daren .darenImg {
+    width: 360px;
+    height: 150px;
+    overflow: hidden;
+}
+
+.daren img {
+    display: block;
+    margin-top: -100px;
+    /* width: 100%; */
+    height: auto;
+}
+
+.daren p {
+    width: 360px;
+    height: 60px;
+    line-height: 60px;
+    /* 溢出显示... */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.aboutGoods {
+    width: 1100px;
+    height: 640px;
+    background-color: #f8f8f8;
+    margin-bottom: 60px;
+    overflow: hidden;
+}
+
+.xuhao {
+    width: 500px;
+    height: 40px;
+    /* margin: 38px 300px 0px; */
+    margin: 38px auto;
+    /* background-color: red; */
+    overflow: hidden;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.xuhao li {
+    width: 36px;
+    height: 36px;
+    border: 2px solid #e0e0e0;
+    border-radius: 50%;
+    float: left;
+    text-align: center;
+    font-size: 18px;
+    line-height: 36px;
+}
+
+.xuhao .active {
+    border: 2px solid #0f0b00;
+}
+
+.itemsContent {
+    width: 1100px;
+    height: 700px;
+    margin-bottom: 50px;
+    /* background-color: orange; */
+}
+
+.itemsContent items1 {}
+
+.itemsContent .imgs {
+    width: 535px;
+    height: 450px;
+    float: left;
+}
+
+.itemsContent .imgs img {
+    width: 405px;
+    height: 405px;
+    display: block;
+    margin: auto 36px;
+    /* margin: 0 auto; */
+}
+
+.itemsContent .tips {
+    width: 550px;
+    height: 340px;
+    float: left;
+    margin: 38px 0px 42px;
+    /* background-color: greenyellow; */
+}
+
+.tips p {
+    line-height: 36px;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.tips .size_val {
+    line-height: 36px;
+    text-align: center;
+    /* margin-top: 40px; */
+}
+
+.tips button {
+    width: 318px;
+    height: 38px;
+    background-color: #ccc;
+    color: #fff;
+    border: none;
+    outline: none;
+    margin: auto 116px;
+}
+
+.tips .addcar {
+    margin: 50px 116px 10px;
+}

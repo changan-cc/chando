@@ -1,0 +1,833 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    /* background-color: #ffffff; */
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    font-style: normal;
+}
+
+header {
+    width: 100%;
+    /* height: 110px; */
+    background-color: #ffffff;
+    /* background-color: purple; */
+}
+
+#head {
+    width: 1200px;
+    height: 128px;
+    margin: auto;
+    /* background-color: red; */
+    position: relative;
+}
+
+#head img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    height: 45px;
+}
+
+
+/* nav */
+
+.back {
+    display: none;
+    width: 20px;
+    height: 40px;
+    background: url(../images/back.png) no-repeat center;
+    background-size: 100%;
+    position: absolute;
+    left: -40px;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.normalBack {
+    /* display: none; */
+    width: 20px;
+    height: 40px;
+    background: url(../images/back.png) no-repeat center;
+    background-size: 100%;
+    /* background: orange; */
+    position: absolute;
+    left: -40px;
+    top: 0px;
+    /* transform: translate(0, -50%); */
+}
+
+.logo {
+    display: none;
+    width: 120px;
+    box-sizing: border-box;
+    /* position: absolute;
+    left: -20px; */
+    /* margin-top: 14px; */
+    float: left;
+    margin: 25px 20px 15px;
+}
+
+.nav {
+    height: 76px;
+    width: 100%;
+    background-color: yellow;
+    background-color: #ffffff;
+    z-index: 2000;
+    /* position: relative; */
+}
+
+.nav-content {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#nav {
+    width: 1200px;
+    height: 76px;
+    /* background-color: green; */
+    margin: 0 auto;
+    position: relative;
+}
+
+#nav li {
+    float: left;
+    list-style: none;
+    float: left;
+    line-height: 36px;
+    margin-right: 20px;
+    margin-left: 30px;
+    /* background-color: red; */
+    font-size: 16px;
+    color: #0f0b00;
+}
+
+#nav ul {
+    /* width: 848px; */
+    height: 76px;
+    float: left;
+    color: #0f0b00;
+    font-size: 16px;
+    /* background-color: rgb(163, 189, 163); */
+    /* margin-left: 50px; */
+}
+
+#nav ul li:last-child {
+    margin: 0px;
+}
+
+#nav dl {
+    width: 165px;
+    height: 76px;
+    float: right;
+    /* background-color: rgb(235, 123, 169); */
+}
+
+#nav dt {
+    float: left;
+    line-height: 36px;
+    margin-right: 34px;
+    margin-top: 10px;
+    font-size: 18px;
+    color: #0f0b00;
+    /* background-color: orange; */
+}
+
+#nav dt img {
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+
+
+/* 二级菜单 */
+
+.nav_content_menubox {
+    /* width: 100%; */
+    width: 1000px;
+    height: 200px;
+    /* background-color: orange; */
+    position: absolute;
+    top: 50px;
+    background-color: #eee;
+    /* opacity: .5; */
+    z-index: 2000;
+    display: none;
+}
+
+.nav-content-menubox>li {
+    width: 100%;
+    height: 100%;
+    color: #808080;
+    font-size: 34px;
+    /* background-color: red; */
+    padding-left: 200px;
+}
+
+
+/* banner */
+
+#banner {
+    width: 100%;
+    /* height: 850px; */
+    overflow: hidden;
+    /* background-color: pink; */
+    position: relative;
+}
+
+.banner-box {
+    width: 1519px;
+    margin: 0 auto;
+    /* width: 100%; */
+    overflow: hidden;
+    /* border: 2px solid rgb(10, 10, 9); */
+}
+
+.banner-ul {
+    width: 9000px;
+    /* background: rgb(84, 245, 223); */
+    /* border: 2px solid gold; */
+    position: relative;
+}
+
+.banner-ul li {
+    list-style: none;
+    /* height: 100%; */
+    /* width: 100%; */
+    /* border: 2px solid gold; */
+    /* display: none; */
+    float: left;
+}
+
+.banner-ul li img {
+    display: block;
+    /* width: 100%; */
+    /* width: 1200px;  */
+    height: 100%;
+    width: 1519px;
+}
+
+#banner .dot {
+    width: 100%;
+    height: 100px;
+    /* background-color: rgb(223, 159, 243); */
+    /* margin: auto; */
+    box-sizing: border-box;
+    padding-top: 50px;
+    position: relative;
+    box-sizing: border-box;
+    /* margin-top: 593px; */
+}
+
+#banner .dot ol {
+    /* width: 1200px; */
+    /* height: 20px; */
+    margin: 0 auto;
+    /* background-color: rgb(157, 216, 139); */
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+#banner .dot ol li {
+    width: 26px;
+    height: 5px;
+    margin: 0px 5px;
+    box-sizing: border-box;
+    color: #0f0b00;
+    background-color: #f1f1f1;
+    float: left;
+}
+
+#banner .dot ol .focus {
+    background-color: #999999;
+    width: 52px;
+}
+
+#banner .lef {
+    background: url(../images/left.png) no-repeat center rgba(0, 0, 0, .2);
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translate(0, -50%);
+}
+
+#banner .rig {
+    background: url(../images/right.png) no-repeat center rgba(0, 0, 0, .2);
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translate(0, -50%);
+}
+
+#shop-total {
+    width: 1100px;
+    margin: 0 auto;
+    /* background-color: rgb(230, 196, 8); */
+}
+
+
+/* 明星产品 */
+
+#shop {
+    width: 1100px;
+    /* height: 1100px; */
+    margin: 0 auto;
+    /* background-color: rgb(18, 180, 230); */
+}
+
+h3 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    /* background-color: rgb(236, 163, 102); */
+}
+
+#shop>p {
+    height: 30px;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 50px;
+    font-weight: 300;
+    /* background-color: rgb(184, 112, 168); */
+    position: relative;
+}
+
+#shop>p a {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 30px;
+}
+
+#shop>p span {
+    font-size: 18px;
+    font-weight: 500;
+    width: 115px;
+    height: 30px;
+    line-height: 30px;
+    /* background-color: cadetblue; */
+}
+
+
+/* ul */
+
+#shop ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: lawngreen; */
+}
+
+#shop ul li {
+    width: 360px;
+    /* height: 546px; */
+    overflow: hidden;
+    float: left;
+    text-align: center;
+    margin-bottom: 20px;
+    /* background-color: khaki; */
+}
+
+#shop ul li img {
+    width: 360px;
+    height: 322px;
+    vertical-align: middle;
+}
+
+.tips1 {
+    height: 40px;
+    width: 326px;
+    margin: 10px auto;
+    /* background-color: pink; */
+    background-color: #fefefe;
+    /* padding-left: 10px; */
+    /* box-sizing: border-box; */
+}
+
+.tips1 span {
+    text-align: center;
+    float: left;
+    width: 90px;
+    line-height: 28px;
+    font-size: 12px;
+    font-weight: 100;
+    color: #444444;
+    background: #ffffff;
+    box-shadow: 0px 3px 6px 1px #eeeeee;
+    margin: 4px 0px 0px 10px;
+}
+
+.tips1 i {
+    float: left;
+    width: 24px;
+    height: 40px;
+    background: url(../images/ten_tips.png) center no-repeat;
+}
+
+.tips2 {
+    width: 370px;
+    border-top: 1px solid #eeeeee;
+    padding-top: 15px;
+    margin: 0 auto;
+}
+
+.tips2 p {
+    margin: 15px 0px;
+}
+
+.tips2 p:nth-child(1) {
+    text-align: center;
+}
+
+.tips2 p:nth-child(2) {
+    text-align: center;
+    font-size: 14px;
+    color: #444444;
+}
+
+.tips2 p:nth-child(3) {
+    text-align: center;
+    font-size: 14px;
+    color: #444444;
+}
+
+.tips2 a {
+    display: block;
+    width: 80px;
+    height: 26px;
+    background-color: #ffffff;
+    border: 1px solid #888888;
+    margin: 20px auto;
+    color: #444444;
+    font-size: 14px;
+    line-height: 26px;
+    text-align: center;
+}
+
+
+/* dl */
+
+#shop dl {
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: rgb(154, 97, 201); */
+}
+
+#shop dl dd {
+    display: flex;
+    width: 540px;
+    float: left;
+    margin-right: 20px;
+    /* background-color: khaki; */
+}
+
+#shop dl dd img {
+    width: 270px;
+    height: 260px;
+    float: left;
+}
+
+#shop dl dd>.tips {
+    width: 270px;
+    float: left;
+    padding: 10px 0px 10p 10px;
+    box-sizing: border-box;
+}
+
+#shop dl dd .tips1 {
+    width: 260px;
+    height: 30px;
+    /* padding-top: 16px; */
+    margin: 30px auto 15px;
+}
+
+#shop dl dd .tips1 span {
+    width: 70px;
+    text-align: center;
+    float: left;
+    line-height: 28px;
+    font-size: 12px;
+    font-weight: 100;
+    color: #444444;
+    background: #ffffff;
+    box-shadow: 0px 3px 6px 1px #eeeeee;
+    margin: 4px 0px 0px 8px;
+}
+
+#shop dl dd .tips2 {
+    width: 260px;
+    padding-top: 16px;
+    margin: 0 auto;
+}
+
+
+/* 好物推荐 */
+
+#goodshop {
+    width: 1100px;
+    margin: 0 auto 70px;
+    /* background-color: rgb(192, 225, 255); */
+}
+
+
+/* 护肤 */
+
+#goodshop .hufu {
+    height: 336px;
+    background: url(../images/goodShopBg.png) no-repeat center;
+    padding: 40px 30px;
+    margin-top: 40px;
+    overflow: hidden;
+}
+
+#goodshop .hufu a img {
+    width: 1040px;
+    margin: 0 auto 30px;
+    vertical-align: middle;
+    height: 175px;
+}
+
+#goodshop .hufu ul li {
+    width: 244px;
+    height: 88px;
+    float: left;
+    margin-right: 20px;
+    overflow: hidden;
+}
+
+#goodshop .hufu ul li:last-child {
+    margin: 0px;
+}
+
+#goodshop .hufu ul li img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* 种草 */
+
+#goodshop .zhongcao {
+    height: 430px;
+    margin: 70px 0;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 1px #eee;
+    overflow: hidden;
+}
+
+#goodshop .zhongcao img {
+    height: 356px;
+}
+
+#goodshop .zhongcao p {
+    color: #0f0b00;
+    font-size: 20px;
+    line-height: 70px;
+    text-align: left;
+    padding-left: 30px;
+}
+
+#goodshop .question {
+    width: 1100px;
+    height: 290px;
+    background: url(../images/questionnaireBg.png) no-repeat center;
+    background-size: 100%;
+    position: relative;
+}
+
+#goodshop .question .p {
+    font-size: 28px;
+    position: absolute;
+    left: 90px;
+    top: 70px;
+}
+
+#goodshop .question .quesBtn {
+    width: 175px;
+    line-height: 30px;
+    display: block;
+    border: 1px solid #0f0b00;
+    color: #0f0b00;
+    position: absolute;
+    left: 90px;
+    top: 170px;
+    text-align: center;
+}
+
+
+/* 关于自然堂 */
+
+#aboutchando {
+    width: 1100px;
+    margin: 0 auto 70px;
+    background-color: aqua;
+}
+
+#aboutchando .video {
+    width: 100%;
+    position: relative;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    height: 560px;
+    background-color: rgb(160, 57, 173);
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+#aboutchando .video .play {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* background: url(../images/about_pc.jpg) no-repeat center; */
+    /* background-size: 100%; */
+    width: 100%;
+    height: 100%;
+}
+
+#aboutchando .video .play img {
+    display: block;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* aboutlist */
+
+#aboutchando .aboutlist {
+    height: 600px;
+}
+
+#aboutchando .aboutlist li {
+    width: 355px;
+    height: 260px;
+    float: left;
+    margin: 16px 16px 0px 0px;
+    overflow: hidden;
+}
+
+#aboutchando .aboutlist li:nth-child(3) {
+    margin: 16px 0px 0px 0px;
+}
+
+#aboutchando .aboutlist li:nth-child(6) {
+    margin: 16px 0px 0px 0px;
+}
+
+
+/* footer */
+
+.service {
+    width: 100%;
+    height: 580px;
+    background-color: #0f0b00;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.service-h3 {
+    width: 1220px;
+    height: 82px;
+    line-height: 82px;
+    margin: 0 auto;
+    /* background-color: orange; */
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    font-weight: normal;
+}
+
+.service-u1 {
+    width: 1220px;
+    height: 171px;
+    /* background-color: green; */
+    border-bottom: #808080 1px solid;
+    margin: 0 auto;
+}
+
+.service-l1 {
+    width: 100px;
+    height: 123px;
+    /* background-color: blue; */
+    float: left;
+    margin-left: 162px;
+    margin-top: 20px;
+}
+
+.service-img1 {
+    display: block;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    /* background-color: aqua; */
+    margin-top: 8px;
+    margin-left: 10px;
+}
+
+.service-span1 {
+    display: block;
+    width: 80px;
+    height: 20px;
+    /* background-color: pink; */
+    margin-left: 10px;
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+}
+
+.service-u2 {
+    width: 1220px;
+    height: 168px;
+    /* background-color: pink; */
+    margin: auto;
+    margin-top: 60px;
+}
+
+.service-l2 {
+    width: 100px;
+    height: 168px;
+    /* background-color: red; */
+    float: left;
+    margin-left: 160px;
+}
+
+.service-d1 {
+    width: 100px;
+    height: 148px;
+    /* background-color: green; */
+}
+
+.service-dt1 {
+    /* display: block; */
+    width: 100px;
+    height: 18px;
+    line-height: 18px;
+    /* background-color: gray; */
+    margin-top: 9px;
+    text-align: center;
+    font-weight: 800px;
+    font-size: 20px;
+    color: white;
+}
+
+.service-dd1 {
+    width: 100px;
+    height: 15px;
+    line-height: 15px;
+    /* background-color: yellow; */
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+}
+
+.service-img2 {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+
+.bootom {
+    width: 1220px;
+    height: 130px;
+    /* background-color: yellow; */
+    margin: auto;
+}
+
+.bootom-p1 {
+    width: 1220px;
+    height: 15px;
+    line-height: 15px;
+    margin-top: 40px;
+    /* background-color: red; */
+    text-align: center;
+    color: black;
+    font-size: 15px;
+}
+
+.bottom-span1 {
+    display: block;
+    width: 300px;
+    height: 15px;
+    line-height: 15px;
+    margin-top: 10px;
+    margin-left: 330px;
+    /* background-color: green; */
+}
+
+.bottom-span2 {
+    display: block;
+    width: 258px;
+    height: 15px;
+    line-height: 15px;
+    margin-top: -15px;
+    margin-left: 620px;
+    /* background-color: red; */
+    /* text-align: center; */
+}
+
+.bottom-img1 {
+    display: block;
+    width: 15px;
+    height: 15px;
+    margin-top: -15px;
+}
+
+.toTop {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #dddcda;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    text-align: center;
+    line-height: 20px;
+    background-color: #fff;
+    font-size: 12px;
+}
+
+.toTop span {
+    display: block;
+    font-size: 20px;
+    line-height: 25px;
+}

@@ -1,0 +1,39 @@
+maxBox {
+    width: 100%;
+    background-color: rgb(167, 159, 159);
+}
+
+.contentBox {
+    width: 1100px;
+    height: 1000px;
+    margin: 0 auto;
+    background-color: orange;
+}
+
+.carTitle {
+    width: 1100px;
+    height: 80px;
+    line-height: 80px;
+    border-bottom: 1px solid #ccc;
+    /* background-color: aquamarine; */
+}
+
+.car0 {
+    width: 1100px;
+    height: 365px;
+    background-color: azure;
+}
+
+.car0 img {
+    width: 76px;
+    height: 70px;
+    display: block;
+}
+
+.car0 button {
+    width: 200px;
+    height: 40px;
+    border: 1px solid black;
+    outline-color: none;
+    background-color: #fff;
+}

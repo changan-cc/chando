@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>购物车</title>
+    <link rel="stylesheet" type="text/css" href="图标图标/iconfont.css" />
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/hover.css">
+    <link rel="stylesheet" href="css/car.css">
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header id="head">
+    </header>
+    <!-- 导航栏 -->
+    <nav class="nav">
+    </nav>
+
+    <!-- 商品详情 -->
+    <div class="maxBox">
+        <div class="contentBox">
+            <!-- 购物袋 -->
+            <div class="carTitle">
+                <p style="font-size: 18px;font-weight: 600;text-align: center;line-height: 70px;">购物袋</p>
+            </div>
+            <!-- 购物车没有商品 -->
+            <div class="car0">
+                <div>
+                    <img src="images/cart_0_ico.png" alt="">
+                    <p>购物袋空空如也</p>
+                    <button>去逛逛</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- 尾部 -->
+    <footer id="foot">
+    </footer>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="nav/nav.js"></script>
+    <script>
+        $(".nav").load("nav/nav.html");
+        $("#head").load("header/header.html");
+        $("#foot").load("footer/footer.html");
+    </script>
+</body>
+
+</html>
